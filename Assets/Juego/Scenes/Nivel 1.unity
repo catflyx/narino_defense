@@ -1048,7 +1048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &131539986
 Transform:
   m_ObjectHideFlags: 0
@@ -10436,19 +10436,21 @@ MonoBehaviour:
     Delay: 0
   - PathElementPosition: {x: 1.7743797, y: 5.1469088, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 5.585144, y: 3.2194147, z: 0}
+  - PathElementPosition: {x: 5.3217297, y: 5.107215, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 10.582024, y: 3.3162937, z: 0}
+  - PathElementPosition: {x: 5.6210613, y: 0.1114254, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 10.920975, y: 5.6229954, z: 0}
+  - PathElementPosition: {x: 10.569756, y: 2.5059328, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 16.603172, y: 5.802434, z: 0}
+  - PathElementPosition: {x: 18.929996, y: 2.0707378, z: 0}
     Delay: 0
   - PathElementPosition: {x: 23.160583, y: 4.3725834, z: 0}
     Delay: 0
-  - PathElementPosition: {x: 23.323921, y: 7.6938696, z: 0}
+  - PathElementPosition: {x: 24.070261, y: 6.8158226, z: 0}
     Delay: 0
   - PathElementPosition: {x: 23.323921, y: 10.558002, z: 0}
+    Delay: 0
+  - PathElementPosition: {x: 28.328785, y: 5.7726517, z: 0}
     Delay: 0
   ReferenceMMPath: {fileID: 0}
   AbsoluteReferencePath: 0

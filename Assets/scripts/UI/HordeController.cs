@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEditor.U2D.Path;
 
 public class HordeController : MonoBehaviour
 {
@@ -35,27 +36,32 @@ public class HordeController : MonoBehaviour
             StartB.SetActive(true);
 
             Towers.SetActive(true); Powers.SetActive(false);
-        }
+        } 
 
         if (lives <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(48);
         }
         else
         {
             if (horde >= 15 && HordeStart == false)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+                SceneManager.LoadScene(49);
             }
         }
 
+        //Gametesting
         if (Input.GetKeyDown(KeyCode.X))
         {
             lives--; LivesT.text = lives.ToString();
         }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            horde++; HordesT.text = horde + " / 15";
+        }
     }
     public void StartHorde()
-    {
+    { 
         StartB.SetActive(false);
         horde++; HordesT.text = horde + " / 15";
         HordeStart = true;

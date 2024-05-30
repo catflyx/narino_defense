@@ -40,6 +40,10 @@ public class LoseController : MonoBehaviour
             case 2: SceneManager.LoadScene(51); break;
             case 3: SceneManager.LoadScene(52); break;
         }
+        if (currentLevel > 3)
+        {
+            SceneManager.LoadScene(45);
+        }
     }
     public void MenuLose()
     {

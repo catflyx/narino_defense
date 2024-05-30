@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LoseController : MonoBehaviour
 {
-    public int currentLevel; //No sé como hacer q esto se guarde al cambiar de escena AHHH
+    static int currentLevel = 1; //No sé como hacer q esto se guarde al cambiar de escena AHHH
+    //EL STATIC ERA LA CLAVE?!
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("NIVEL ACTUAL: " + currentLevel);
     }
 
     // Update is called once per frame
@@ -20,8 +21,9 @@ public class LoseController : MonoBehaviour
     }
     public void TryAgain()
     {
+        Debug.Log("NIVEL ACTUAL: " + currentLevel);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        switch(currentLevel)
+        switch (currentLevel)
         {
             case 1: SceneManager.LoadScene(50); break;
             case 2: SceneManager.LoadScene(51); break;
@@ -30,6 +32,7 @@ public class LoseController : MonoBehaviour
     }
     public void NextLevel()
     {
+        Debug.Log("NIVEL ACTUAL: " + currentLevel);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         currentLevel++;
         switch (currentLevel)
